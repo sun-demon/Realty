@@ -24,9 +24,9 @@ namespace Realty {
 	private:
 		static std::size_t hash(const std::string& password);
 
-		std::size_t _id;
-		std::string _login;
-		std::size_t _passwordHash;
+		std::size_t id_;
+		std::string login_;
+		std::size_t passwordHash_;
 	};
 }
 

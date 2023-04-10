@@ -23,9 +23,9 @@ namespace Realty {
 		[[nodiscard]] std::string toString() const;
 
 	private:
-		int _city;
-		int _station;
-		int _subscriber;
+		int city_;
+		int station_;
+		int subscriber_;
 	};
 }
 
