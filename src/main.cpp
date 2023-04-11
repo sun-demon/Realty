@@ -1,39 +1,27 @@
 ﻿#include <iostream>
-#include "Menu/Menu.h"
 
 using namespace Realty;
 
-void logIn();
-void logUp();
-
-void  createAdd();
-void  changeAdd();
-void destroyAdd();
-void searchByQuery();
-
 int main() {
-    Menu authorizeMenu {"Authorization",
-        { {"log in", logIn},
-          {"log up", logUp} }
+    User user {
+        0,
+        "login", "password",
+        "Surname", "Name", "Patronymic",
+        { 800, 555, 3535 }
     };
 
-    authorizeMenu.run();
+    Add add {
+        0, 0,
+        std::vector<Magick::Image>(),
+        2, 16.3,
+        4, 5,
+        12000, "Zentral", "Kaluga, Rileeva, 2, 32"
+    };
 
-    return 0;
-}
-
-void logIn() {
-    while (true) {
-        std::string login, password;
-        std::cout << "Input login: " << std::flush;
-        std::cin >> login;
-        std::cout << "Input password: " << std::flush;
-        std::cin >> password;
-
-        if (DataBase.getInstance().);
-    }
-}
-
-void logUp() {
-
+    fmt::format("User :\r\n"
+                "   id :    {}",
+                "   login : {}",
+                "   passwordHash : {}",
+                "   surname : {}",
+                "   name :         {}")
 }
