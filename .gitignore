@@ -1,2 +1,4 @@
 build
-.ideacmake-build-debug
+.idea
+cmake-build-debug
+
